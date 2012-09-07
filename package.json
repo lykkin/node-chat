@@ -1,0 +1,15 @@
+{ 
+  "name" : "chat",
+  "version" : "0.9.5",
+  "dependencies" : {
+    "ejs" : "latest" ,
+    "http" : "latest" ,
+    "express" : "latest" ,
+    "mongoose" : "latest" ,
+    "ejs-locals" : "latest",
+    "irc" : "latest",
+    "node-uuid" : "latest",
+    "redis" : "latest",
+    "socket.io" : "latest"
+  }
+}

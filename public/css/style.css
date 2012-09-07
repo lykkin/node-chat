@@ -1,0 +1,147 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+#tabDiv{
+  width:100%;
+  height:2%;
+}
+
+#tabContent #output {
+  height: 80%;
+  width: 91%;
+  
+  float: left;
+
+  overflow: auto;
+  
+}
+
+#tabContent #userContainer{
+  float: right;
+  
+  border-width: 0px;
+  width: 8%;
+  height: 80%;
+
+}
+
+
+#tabContent #input {
+  resize: none;
+  outline: none;
+  
+  padding: .5%;
+  
+  height: 18.1%;
+  width: 84%;
+  
+  float: left;
+  
+}
+
+#tabDiv li {
+  display: inline;
+  border : solid;
+  border-width: 1px 1px 0 1px;
+  margin: 0 0.5em 0 0;
+}
+
+#tabDiv li a {
+  padding: 0 1em;
+}
+
+#tabDiv #selected {
+  padding-bottom: 1px;
+  background: white;
+}
+
+#tabContent {
+ /** border: 1px solid;**/
+  height: 98%;
+  width: 100%;
+
+}
+
+#tabContent #output .message {
+  margin-bottom: 1px;
+  
+  border-style: solid;
+  border-width: 1px;
+}
+
+#tabContent #output .message #messageContent {
+  position: relative;
+  width: 95%;
+  /*border-style: solid;
+  border-width: 1px;*/
+}
+
+#tabContent #userContainer{
+  float: right;
+  
+  border-style: solid;
+  border-width: 1px;
+
+  width: 8.95%;
+  height: 80%;
+
+}
+
+#tabContent #output .message .user {
+  position: relative;
+  float: left;
+  
+  color: blue;
+  
+  width: 8%;
+
+  /*border-style: solid;
+  border-width: 1px;*/
+  
+  text-align:center;
+}
+
+#tabContent #output .message .time {
+  position: relative;
+  float: right;
+  
+  width: 10%;
+
+  color: blue;
+  
+  /*border-style: solid;
+  border-width: 1px;*/
+ 
+  text-align:center;
+}
+
+#tabContent #output .message #messageContent p {
+   word-wrap: break-word;
+   position: relative;
+   margin-left: 5%;
+   color: red;
+}
+
+
+
+#tabContent #send {
+  height: 15%;
+  width: 15%;
+  
+  float: left; 
+  text-align: center;
+
+}
+
+#tabContent #conOp {
+  height: 4.9%;
+  width: 15%;
+
+  float: left;
+  text-align: center;
+
+}
