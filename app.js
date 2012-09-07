@@ -59,7 +59,7 @@ function MessageQ () {
     //if(!this[room + 'listener']){
     Users.findCreate(name, false, function (err, doc){
       if(doc.rooms.indexOf('#' + room) === -1){
-        doc.rooms.$push('#' + room);
+        doc.rooms.push('#' + room);
         doc.save();
       }
     });
@@ -152,7 +152,7 @@ function MessageQ () {
 	    }
     });
     Users.findCreate(name, true, function(err, doc){
-      doc.rooms.$pull(room);
+      doc.rooms.pull(room);
       doc.save();
     });
   }
@@ -210,7 +210,7 @@ sio.sockets.on('connection', function(socket) {
             Users.findCreate(fromList, true, function(err, doc){
               if(fromList !== name){
                 if(doc.rooms.indexOf(room) === -1){
-                  doc.rooms.$push(room);
+                  doc.rooms.push(room);
                   doc.save();
                 }
               }
